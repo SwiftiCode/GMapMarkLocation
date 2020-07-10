@@ -14,6 +14,7 @@
 		2098F80124B5FDF100D92936 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2098F80024B5FDF100D92936 /* Assets.xcassets */; };
 		2098F80424B5FDF100D92936 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2098F80224B5FDF100D92936 /* LaunchScreen.storyboard */; };
 		2098F80F24B5FDF200D92936 /* GMapMarkLocationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2098F80E24B5FDF200D92936 /* GMapMarkLocationTests.swift */; };
+		96B6E64E611BEDFB327A40A2 /* libPods-GMapMarkLocation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D71CAAAADE3F89DE56E768EB /* libPods-GMapMarkLocation.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,9 @@
 		2098F80A24B5FDF200D92936 /* GMapMarkLocationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GMapMarkLocationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2098F80E24B5FDF200D92936 /* GMapMarkLocationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GMapMarkLocationTests.swift; sourceTree = "<group>"; };
 		2098F81024B5FDF200D92936 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		40E89333CB1297E1B23F2B10 /* Pods-GMapMarkLocation.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GMapMarkLocation.debug.xcconfig"; path = "Target Support Files/Pods-GMapMarkLocation/Pods-GMapMarkLocation.debug.xcconfig"; sourceTree = "<group>"; };
+		A2D1CB63138ABEFBC8EAFF6A /* Pods-GMapMarkLocation.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GMapMarkLocation.release.xcconfig"; path = "Target Support Files/Pods-GMapMarkLocation/Pods-GMapMarkLocation.release.xcconfig"; sourceTree = "<group>"; };
+		D71CAAAADE3F89DE56E768EB /* libPods-GMapMarkLocation.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GMapMarkLocation.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				96B6E64E611BEDFB327A40A2 /* libPods-GMapMarkLocation.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -64,6 +69,8 @@
 				2098F7F624B5FDEC00D92936 /* GMapMarkLocation */,
 				2098F80D24B5FDF200D92936 /* GMapMarkLocationTests */,
 				2098F7F524B5FDEC00D92936 /* Products */,
+				6A5085B009223D830FC467BB /* Pods */,
+				DFF70794AA540714C052F392 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,6 +106,24 @@
 			path = GMapMarkLocationTests;
 			sourceTree = "<group>";
 		};
+		6A5085B009223D830FC467BB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				40E89333CB1297E1B23F2B10 /* Pods-GMapMarkLocation.debug.xcconfig */,
+				A2D1CB63138ABEFBC8EAFF6A /* Pods-GMapMarkLocation.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		DFF70794AA540714C052F392 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D71CAAAADE3F89DE56E768EB /* libPods-GMapMarkLocation.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -106,9 +131,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2098F81324B5FDF200D92936 /* Build configuration list for PBXNativeTarget "GMapMarkLocation" */;
 			buildPhases = (
+				CDCA65F69887F20C8BFC3EC6 /* [CP] Check Pods Manifest.lock */,
 				2098F7F024B5FDEC00D92936 /* Sources */,
 				2098F7F124B5FDEC00D92936 /* Frameworks */,
 				2098F7F224B5FDEC00D92936 /* Resources */,
+				51AF2379FC22F37A25A6339F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -194,6 +221,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		51AF2379FC22F37A25A6339F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GMapMarkLocation/Pods-GMapMarkLocation-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GMapMarkLocation/Pods-GMapMarkLocation-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GMapMarkLocation/Pods-GMapMarkLocation-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CDCA65F69887F20C8BFC3EC6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GMapMarkLocation-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		2098F7F024B5FDEC00D92936 /* Sources */ = {
@@ -360,6 +429,7 @@
 		};
 		2098F81424B5FDF200D92936 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 40E89333CB1297E1B23F2B10 /* Pods-GMapMarkLocation.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -378,6 +448,7 @@
 		};
 		2098F81524B5FDF200D92936 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A2D1CB63138ABEFBC8EAFF6A /* Pods-GMapMarkLocation.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
